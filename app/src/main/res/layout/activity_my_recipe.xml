@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyRecipe"
+   android:background="@color/primaryColor">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/back" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resep Saya"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/secondaryColor"
+        android:id="@+id/txt_judul" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/txt_judul"
+        android:padding="20dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:margin="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/img_makanan"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/img"
+                    android:background="@drawable/button_shape"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="nasi goreng"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textColor="@color/secondaryColor"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diunggah pada:"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textColor="@color/secondaryColor"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09/24/23"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textColor="@color/secondaryColor"
+                        android:layout_marginStart="15dp"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:text="Edit"
+                        android:textSize="20sp"
+                        android:drawableStart="@drawable/baseline_create_24"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:text="Hapus"
+                        android:textSize="20sp"
+                        android:drawableStart="@drawable/ic_delete"/>
+                </LinearLayout>
+            </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
